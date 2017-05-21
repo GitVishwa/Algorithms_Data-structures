@@ -1,3 +1,6 @@
+
+/*Implementation of stack */
+
 #include<iostream>
 #include<stdlib.h>
 #include<string>
