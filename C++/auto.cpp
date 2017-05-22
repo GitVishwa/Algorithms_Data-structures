@@ -1,3 +1,9 @@
+/*
+
+Usage of auto
+
+*/
+
 #include<iostream>
 #include<list>
 using namespace std;
