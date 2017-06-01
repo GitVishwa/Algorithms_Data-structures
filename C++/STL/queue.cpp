@@ -1,3 +1,14 @@
+/*Implementation of Queue STL operations
+	1)push()
+	2)size()
+	3)front()
+	4)pop()
+	5)empty()
+
+@Author Vishwanath Gulabal
+
+*/
+
 #include<iostream>
 #include<queue>
 

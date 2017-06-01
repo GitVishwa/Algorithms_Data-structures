@@ -8,6 +8,8 @@
 	7)erase
 	8)size
 	9)find
+
+@Author Vishwanath Gulabal
 */
 
 #include<iostream>

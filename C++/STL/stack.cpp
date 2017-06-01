@@ -1,4 +1,12 @@
-/* Implemenations of basic Stack operations */
+/* Implemenations of basic Stack operations 
+	1)push()
+	2)pop()
+	3)empty()
+	4)size()
+
+@Author Vishwanath Gulabal
+
+*/
 
 
 #include<iostream>
