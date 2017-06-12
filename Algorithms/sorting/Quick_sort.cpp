@@ -1,5 +1,5 @@
 /*
-	Implementation of merge sort
+	Implementation of Quick sort
 	@Author Vishwanath Gulabal
 */
 
