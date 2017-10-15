@@ -26,7 +26,7 @@ int LCS(std::string s1,std::string s2){
 			if(s1[i-1] == s2[j-1])
 					dp[i][j] = 1 + dp[i-1][j-1];
 			else
-					dp[i][j] = std::max(dp[i-1][j],dp[i][j-1]);
+					dp[i][j] = 0;
 		}
 	}
 	return dp[m][n];
