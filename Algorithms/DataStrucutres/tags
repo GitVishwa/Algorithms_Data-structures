@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Array	Array_Operations.cpp	/^		Array(){$/;"	f	class:Array
+Array	Array_Operations.cpp	/^class Array{$/;"	c	file:
+Delete	Array_Operations.cpp	/^void Array::Delete(int array[],int element,int length){$/;"	f	class:Array
+display	Array_Operations.cpp	/^void Array::display(int array[], int length){$/;"	f	class:Array
+insert	Array_Operations.cpp	/^void Array::insert(int array[],int element,int length){$/;"	f	class:Array
+length	Array_Operations.cpp	/^		int length;$/;"	m	class:Array	file:
+main	Array_Operations.cpp	/^int main(){$/;"	f
+rotate	Array_Operations.cpp	/^void Array::rotate(int array[],int number, int length){$/;"	f	class:Array
+search	Array_Operations.cpp	/^void Array::search(int array[], int element, int length){$/;"	f	class:Array
+swap	Array_Operations.cpp	/^void swap(int array[],int number,int length){$/;"	f
