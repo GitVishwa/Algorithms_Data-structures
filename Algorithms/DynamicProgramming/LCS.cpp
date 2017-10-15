@@ -6,35 +6,44 @@ Longest Common Substring
 #include<iostream>
 #include<string>
 #include<algorithm>
-#include<stack>
-
-using namespace std;
 
 
+int LCS(std::string s1,std::string s2){
+	int m = s1.length();
+	int n = s2.length();
+	int dp[m+1][n+1];
+
+	for(int i=0;i<=m;i++){
+		dp[i][0] = 0;
+	}	
+	for(int j=0;j<=n;j++){
+		dp[0][j] = 0;
+	}
+
+
+	for(int i=1;i<=m;i++){
+		for(int j=1;j<=n;j++){
+			if(s1[i-1] == s2[j-1])
+					dp[i][j] = 1 + dp[i-1][j-1];
+			else
+					dp[i][j] = std::max(dp[i-1][j],dp[i][j-1]);
+		}
+	}
+	return dp[m][n];
+
+}
 int main(void) {
 
-	string s1,s2;
-	stack<char> s;
-	int i_index=0,j_index=0;
-	getline(cin,s1);
-	getline(cin,s2);
+	std::string s1,s2;
 	
-	
-	while(i_index < s1.length() && j_index < s2.length() ) {
-		s.push(s1[i_index]);
-		s.push(s2[j_index]);
-		i_index++;
-		j_index++;
-	}
+	std::cout <<"Enter the first string " << std::endl;
+	std::cin >> s1;
 
-	while(i_index < s1.length()) s.push(s1[i_index]),i_index++;
+	std::cout << "Enter the second string " << std::endl;
+	std::cin >> s2;
 
-	while(j_index < s2.length()) s.push(s2[j_index]),j_index++;	
+	std::cout << "The LCS for the given string is " << LCS(s1,s2) << std::endl;
 
-	while(!s.empty()) {
-		cout << s.top() ;
-		s.pop();
-	}
 
 	return 0;
 }
